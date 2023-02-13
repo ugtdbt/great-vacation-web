@@ -2165,3 +2165,12 @@ ul.breadcrumb li a:hover {
 .section-ticket .body .panel .panel-body form .input-form select {
   margin-top: 15px;
 }
+
+.destination-images{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.destination-images img{
+ width: 200px;
+}
