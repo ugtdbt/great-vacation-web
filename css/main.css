@@ -664,7 +664,7 @@ hr {
 }
 
 .section-header-image {
-  position: absolute;
+  position:absolute;
   overflow: hidden;
   width: 100%;
   max-height: 100%;
@@ -857,7 +857,7 @@ hr {
 
 .section-explore {
   margin-top: 60px;
-  background: url("../img/header4.jpg");
+  background: url("../img/ceylone/header4.jpg");
   background-size: cover;
   background-attachment: fixed;
   background-position: center;
@@ -1274,7 +1274,9 @@ hr {
 /* -- Section Testi -- */
 
 .section-testi {
-  background: url("../img/bg-3.jpg");
+  /* background: url("../img/bg-3.jpg"); */
+  background: url("../img/ceylone/rest.jpg");
+
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
