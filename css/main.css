@@ -2203,3 +2203,39 @@ ul.breadcrumb li a:hover {
   }
 } */
 
+.icons{
+  top:90%;
+  left:0;
+  transform: translateY(-50%);
+  position: fixed;
+  z-index: 100;
+  margin-left: 2%;
+}
+
+.icons ul {
+  padding: initial;
+}
+.icons ul li{
+  height: 40px;
+  width: 150px;
+  list-style-type: none;
+  padding-left: 10px;
+  padding-top: 6px;
+  margin-top: 5px;
+  color: white;
+  background-color: green;
+  display: flex;
+  justify-content: baseline;
+  border-radius: 10px;
+}
+.icons ul li i{
+margin-top: 5px;
+margin-left: 15px;
+margin-right: 15px;
+}
+.icons ul li span{
+  margin-top: 2px;
+  margin-left: 2px;
+  margin-right: 15px;
+  }
+
