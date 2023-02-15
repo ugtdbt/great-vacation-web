@@ -1584,17 +1584,17 @@ hr {
 }
 
 .section-footer .row .col-right {
-  width: 18%;
+  width: 25%;
 }
 
-@media (max-width: 420px) {
+@media (max-width: 700px) {
   .section-footer .row .col-left {
     width: 90%;
   }
 
   .section-footer .row .col-right {
     padding-top: 20px;
-    width: 50%;
+    width: 90%;
   }
 }
 
@@ -2301,13 +2301,14 @@ ul.breadcrumb li a:hover {
   min-height: 100%;
   transition: 0.3s;
   border-radius: 10px;
+  box-shadow: 5px 3px 12px 6px #00000024;
 
 }
 
 .destination-images-flexinner img:hover {
-  box-shadow: 0px 6px 12px 6px #00000036;
+  box-shadow: 0px 6px 12px 6px #00000044;
   border-radius: 10px;
-  transform: scale(1.1);
+  transform: scale(1.14);
 
 }
 

@@ -11,12 +11,9 @@
     <meta name="description" content="Sri Lanka Travel Time" />
     <meta name="keywords" content="Travel, Sri Lanka, Tourism" />
     <meta name="robots" content="index, nofollow" />
-    <meta name="web_author" content="Yogi Prasertawan" />
-    <meta name="language" content="Indonesian" />
 
     <!-- Import Icon -->
     <link rel="stylesheet" type="text/css" href="css/ionicons.min.css" />
-    <script src="https://kit.fontawesome.com/5a1fbe1d7c.js" crossorigin="anonymous"></script>
 
     <!-- Import Style -->
     <link rel="stylesheet" type="text/css" href="css/main.css" />
@@ -40,9 +37,6 @@
           /></a>
           <ul>
             <li><a href="gallery.html">Gallery</a></li>
-            <li>
-              <a data-slide="slides" data-slide-target="#discover">Discover</a>
-            </li>
             <li>
               <!-- <button class="btn-login" id="openLogin">See our Tour packages</button> -->
               <a href="destination.html"
@@ -341,13 +335,11 @@
               </ul>
             </ul>
           </div>
+          <!-- images -->
           <section class="destination-images">
-            <!-- <div></div> -->
             <div class="destination-images-flexinner">
               <img src="img/ceylone/destinations/whale1.png" alt="img" />
             </div>
-            <!-- <div><img src="img/ceylone/destinations/image.3RV5Z1.png" alt="img"></div> -->
-
             <div class="destination-images-flexinner">
               <img src="img/ceylone/destinations/image.AMY2Z1.png" alt="img" />
             </div>
@@ -381,11 +373,18 @@
                 included)
               </p>
               <p>Overnight stay at your hotel in Bentota…………..</p>
-
-              <div class="destination-images">
-                <!-- <img src="img/ceylone/destinations/image.3RV5Z1.png" alt="img">
-				<img src="img/ceylone/destinations/image.AMY2Z1.png" alt="img"> -->
-              </div>
+              <!-- images -->
+              <section class="destination-images">
+                <div class="destination-images-flexinner">
+                  <img src="img/ceylone/destinations/benthota1.jpg" alt="img" />
+                </div>
+                <div class="destination-images-flexinner">
+                  <img src="img/ceylone/destinations/benthota2.jpg" alt="img" />
+                </div>
+                <div class="destination-images-flexinner">
+                  <img src="img/ceylone/destinations/benthota3.jpeg" alt="img" />
+                </div>
+              </section>
             </ul>
           </div>
         </div>
@@ -487,11 +486,11 @@
             <form class="form-horizontal">
               <div class="input-form">
                 <label>Select Date</label>
-                <input type="date" name="" class="form-control" />
+                <input type="date" name="" id="dateWhatsapp" class="form-control" />
               </div>
               <div class="input-form">
                 <label>Number of Pax</label>
-                <select class="form-control">
+                <select class="form-control" id="paxWhatsapp">
                   <option value="1">1</option>
                   <option value="2">2</option>
                   <option value="3">3</option>
@@ -500,8 +499,12 @@
               </div>
               <div class="input-form" id="find">
                 <label></label>
-                <button class="btn btn-ticket btn-orange" style="margin-top: 37px; text-align: right">
-                  Purchase
+                <button
+                  onclick="sendWhatsAppMessage()"
+                  class="btn btn-ticket btn-green"
+                  style="background-color: rgb(65, 199, 65); margin-top: 37px; text-align: right"
+                >
+                  Sent to Whatsapp
                 </button>
               </div>
             </form>
@@ -523,7 +526,7 @@
       <div class="row">
         <div class="col-left">
           <p>
-            Our Address<br />
+            <!-- Our Address<br /> -->
             Phone : +94 77 222 **** <br />
             Email : contact@great-vacation.com
           </p>
@@ -532,9 +535,9 @@
         <div class="col-right">
           <b>TRAVEL GUIDE</b>
           <ul>
-            <li><a href="10nights11days.html">10 Days tour </a></li>
-            <li><a href="8nights9days.html">8 Days tour</a></li>
-            <li><a href="4nights4days.html">4 Day Tour</a></li>
+            <li><a href="10nights11days.html">10 Nights / 11 Days Tour </a></li>
+            <li><a href="8nights9days.html">8 Nights / 9 Days tour</a></li>
+            <li><a href="4nights4days.html">4 Nights / 4 Days Tour</a></li>
           </ul>
         </div>
         <div class="col-right">
@@ -557,5 +560,27 @@
     <!-- ---scripts---  -->
 
     <script src="https://kit.fontawesome.com/5a1fbe1d7c.js" crossorigin="anonymous"></script>
+
+    <script>
+      function sendWhatsAppMessage() {
+        // Get user input values
+        var package = "10 NIGHTS / 11 DAYS";
+        var pax = +document.getElementById("paxWhatsapp").value;
+        var date = " " + document.getElementById("dateWhatsapp").value;
+        var number = "+94114666444";
+        var final =
+          "Package: " + package + " | Date: " + date.toString() + " | No. of Pax: " + pax.toString();
+
+        console.log(final);
+        // console.log(typeof final)
+        console.log(typeof final);
+
+        // Construct the WhatsApp URL
+        var url = "https://wa.me/" + number + "?text=" + encodeURIComponent(final);
+
+        // Open the WhatsApp chat window
+        window.open(url);
+      }
+    </script>
   </body>
 </html>
