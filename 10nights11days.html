@@ -1,537 +1,668 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<meta http-equiv="X-UA-Compatible" content="ie=edge">
-	<title>10 NIGHTS / 11 DAYS HOLIDAYS TO SRI LANKA</title>
-	<link rel="icon" type="image/png" href="img/icon/bavel.png">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>10 NIGHTS / 11 DAYS HOLIDAYS TO SRI LANKA</title>
+    <link rel="icon" type="image/png" href="img/icon/bavel.png" />
 
-	<!-- Meta Description -->
-	<meta name="description" content="Sri Lanka Travel Time">
-	<meta name="keywords" content="Travel, Sri Lanka, Tourism">
-	<meta name="robots" content="index, nofollow">
-	<meta name="web_author" content="Yogi Prasertawan">
-	<meta name="language" content="Indonesian">  
+    <!-- Meta Description -->
+    <meta name="description" content="Sri Lanka Travel Time" />
+    <meta name="keywords" content="Travel, Sri Lanka, Tourism" />
+    <meta name="robots" content="index, nofollow" />
+    <meta name="web_author" content="Yogi Prasertawan" />
+    <meta name="language" content="Indonesian" />
 
-	<!-- Import Icon -->
-  	<link rel="stylesheet" type="text/css" href="css/ionicons.min.css">
+    <!-- Import Icon -->
+    <link rel="stylesheet" type="text/css" href="css/ionicons.min.css" />
+    <script
+      src="https://kit.fontawesome.com/5a1fbe1d7c.js"
+      crossorigin="anonymous"
+    ></script>
 
-	<!-- Import Style -->
-	<link rel="stylesheet" type="text/css" href="css/main.css">
-	<link rel="stylesheet" type="text/css" href="css/swipe.min.css">
+    <!-- Import Style -->
+    <link rel="stylesheet" type="text/css" href="css/main.css" />
+    <link rel="stylesheet" type="text/css" href="css/swipe.min.css" />
+  </head>
+  <body style="background: #e6eaed">
+    <!-- Navbar -->
+    <nav class="navbar">
+      <div class="container">
+        <div class="navbar-bars">
+          <a href="#" class="navbar-title sidebar-toggle" style="padding: 0"
+            ><i class="ion-navicon-round"></i
+          ></a>
+          <a href="index.html" class="navbar-title"
+            ><img
+              class="navbar-logo-mobile"
+              src="img/logo.png"
+              alt="great-vacation logo"
+          /></a>
+        </div>
+        <div class="navbar-item">
+          <a href="index.html" class="navbar-title"
+            ><img
+              class="navbar-logo"
+              src="img/logo.png"
+              alt="great-vacation logo"
+          /></a>
+          <ul>
+            <li><a href="destination.html">Destination</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="index.html#discover">Discover</a></li>
+            <!-- <li><a href="news.html"> News</a></li> -->
+            <li>
+              <button class="btn-login" id="openLogin">Tour packages</button>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
 
-</head>
-<body style="background: #e6eaed;">
+    <!-- Sidebar -->
+    <div class="sidebar">
+      <ul class="sidebar-list">
+        <li>
+          <a href="" class="close"><span class="ion-android-close"></span></a>
+        </li>
+        <li class="sidebar-list-hover"><a href="index.html">Home</a></li>
+        <li class="sidebar-list-hover">
+          <a href="destination.html">Destination</a>
+        </li>
+        <li class="sidebar-list-hover"><a href="gallery.html">Gallery</a></li>
+        <li class="sidebar-list-hover">
+          <a href="index.html#discover">Discover</a>
+        </li>
+        <!-- <li class="sidebar-list-hover"><a href="news.html"> News</a></li> -->
+        <li>
+          <a class="btn btn-orange btn-round" href="login.html">
+            Tour packages</a
+          >
+        </li>
+      </ul>
+    </div>
 
-<!-- Navbar -->
-<nav class="navbar">
-	<div class="container">
-		<div class="navbar-bars">
-			<a href="#" class="navbar-title sidebar-toggle" style="padding: 0;"><i class="ion-navicon-round"></i></a>
-        	<a href="index.html" class="navbar-title"><img class="navbar-logo-mobile" src="img/logo.png" alt="great-vacation logo"></a>
-		</div>
-		<div class="navbar-item">
-			<a href="index.html" class="navbar-title"><img class="navbar-logo" src="img/logo.png" alt="great-vacation logo"></a>
-			<ul>
-		        <li><a href="destination.html">Destination</a></li>
-			    <li><a href="gallery.html">Gallery</a></li>
-			    <li><a href="index.html#discover">Discover</a></li>
-			    <li><a href="news.html"> News</a></li>
-				<li><button class="btn-login" id="openLogin">Tour packages</button></li>
-  		  	</ul>
-		</div>
-	</div>
-</nav>
+    <!-- Sidebar Overlay -->
+    <section class="sidebar-overlay"></section>
 
-<!-- Sidebar -->
-<div class="sidebar">
-<ul class="sidebar-list">
-	<li><a href="" class="close"><span class="ion-android-close"></span></a></li>
-	<li class="sidebar-list-hover"><a href="index.html">Home</a></li>
-    <li class="sidebar-list-hover"><a href="destination.html">Destination</a></li>
-    <li class="sidebar-list-hover"><a href="gallery.html">Gallery</a></li>
-    <li class="sidebar-list-hover"><a href="index.html#discover">Discover</a></li>
-    <li class="sidebar-list-hover"><a href="news.html"> News</a></li>
-    <li><a class="btn btn-orange btn-round" href="login.html"> Tour packages</a></li>
-</ul>                    
-</div>
+    <!-- Login Form -->
 
-<!-- Sidebar Overlay -->
-<section class="sidebar-overlay"></section>
+    <div class="login-form">
+      <div class="login-top">
+        <span class="close">&times;</span>
+      </div>
+      <div class="login">
+        <h3 class="text-center">Bavel Log In</h3>
+        <div class="form-input">
+          <label>Email</label> <br />
+          <input type="email" name="" class="form-control" />
+        </div>
+        <div class="form-input">
+          <label>Password</label> <br />
+          <input type="password" name="" class="form-control" />
+        </div>
+        <div class="form-input">
+          <button type="submit" class="btn btn-login">Log In</button>
+        </div>
+        <a href="" class="text-center">Don't have account ? Register now</a>
+      </div>
+    </div>
 
-<!-- Login Form -->
+    <div class="login-overlay"></div>
 
-<div class="login-form">
-	<div class="login-top">
-		<span class="close">&times;</span>
-	</div>
-	<div class="login">
-		<h3 class="text-center">
-			Bavel Log In
-		</h3>
-		<div class="form-input">
-			<label>Email</label> <br>
-			<input type="email" name="" class="form-control">
-		</div>
-		<div class="form-input">
-			<label>Password</label> <br>
-			<input type="password" name="" class="form-control">
-		</div>
-		<div class="form-input">
-			<button type="submit" class="btn btn-login">Log In</button>
-		</div>
-		<a href="" class="text-center">Don't have account ? Register now</a>
-	</div>
-</div>
+    <!-- Section -->
 
-<div class="login-overlay"></div>
+    <section class="section-ticket">
+      <div class="header">
+        <img src="img/elephant.jpg" />
+        <div class="overlay">
+          <div class="desc">
+            <h3>10 NIGHTS / 11 DAYS HOLIDAYS TO SRI LANKA</h3>
+            <span class="ion-ios-star checked"></span>
+            <span class="ion-ios-star checked"></span>
+            <span class="ion-ios-star checked"></span>
+            <span class="ion-ios-star checked"></span>
+            <span class="ion-ios-star"></span>
+          </div>
+        </div>
+      </div>
+      <div class="body">
+        <div class="panel">
+          <div class="panel-header">
+            <span class="ion-android-clipboard"></span>&nbsp; Detail Ticket
+          </div>
+          <div class="panel-body">
+            <div class="detail">
+              <div class="col-1">
+                <div class="col">
+                  <span class="ion-clock"></span> 08.00 - 16.000
+                </div>
+                <div class="col">
+                  <span class="ion-person-stalker"></span> Min 1 | Max 15 Pax
+                </div>
+                <div class="col">
+                  <span class="ion-model-s"></span> Transport
+                </div>
+                <div class="col"><span class="ion-pizza"></span> Breakfast</div>
+              </div>
+            </div>
+          </div>
+        </div>
 
-<!-- Section -->
+        <div class="panel">
+          <div class="panel-header">
+            <span class="ion-ios-bookmarks"></span>&nbsp; Day 1: Airport-
+            Dambulla
+          </div>
+          <div class="panel-body">
+            <ul>
+              <p>
+                Upon arrival at the Colombo Bandaranaike International Airport,
+                you will be received warmly by our representative. You will then
+                be escorted to your vehicle to begin your holiday in Sri Lanka.
+              </p>
+              <p>Your first visit will be to Dambulla.</p>
+              <br />
+              <h2>Dambulla</h2>
+              <p>
+                Dambulla is one of the ancient cities of Sri Lanka. The city
+                also boasts to have the largest rose quartz mountain range in
+                South Asia, and the Iron wood forest. Ibbankatuwa prehistoric
+                burial site near Dambulla cave temple complexes is the latest
+                archaeological site found in Dambulla. Dambulla along with
+                nearby Sigiriya and Habarana form a cluster of tourist area
+                within it.
+              </p>
+              <h3>city tour:</h3>
+              <p>
+                Your city tour will commence with the visit to one of the
+                wonders of the ancient world -the Sigiriya Rock Fortress. It is
+                also a UNESCO world Heritage site. Sigiriya Rock was once an
+                ancient Castle used both as a palace and a fortress and was
+                created by the great King Kasyapa. The magnificent rock fortress
+                of Sigiriya is visible for miles from all directions and
+                dominates the surrounding plain. The Sigiriya Complex consists
+                of the central rock, which arises abruptly 200 meters above the
+                surrounding plain with the two rectangular precincts on the east
+                and the west. The rock is surrounded by two wide moats, where
+                crocodiles were introduced in ancient times and three ramparts.
+                The moats and walls that surround the lower palace are still
+                exquisitely beautiful. Your next destination will be the
+                Dambulla Cave Temples. It is the largest and best-preserved cave
+                temple compound in Sri Lanka. There are above 80 chronicle caves
+                around this location. The most prominent allures are advanced
+                over 5 caves, which contain statues and paintings. These
+                paintings and statues are depicted to Lord Buddha and his life.
+                There are a total of 153 Buddha statues, 3 statues of Sri Lankan
+                kings and 4 statues of gods andgoddesses. (Entrance fees to
+                sites not included). Additional tours wildlife tours can be
+                added to the tour. Costs will be extra.
+              </p>
+              <p>Overnight stay at your hotel in Dambulla.</p>
+            </ul>
+          </div>
+        </div>
 
-<section class="section-ticket">
-	<div class="header">
-		<img src="img/elephant.jpg">
-		<div class="overlay">
-			<div class="desc">
-				<h3>10 NIGHTS / 11 DAYS HOLIDAYS TO SRI LANKA</h3>
-				<span class="ion-ios-star checked"></span>
-				<span class="ion-ios-star checked"></span>
-				<span class="ion-ios-star checked"></span>
-				<span class="ion-ios-star checked"></span>
-				<span class="ion-ios-star"></span>
-			</div>
-		</div>
-	</div>
-	<div class="body">
-		<div class="panel">
-			<div class="panel-header">
-				<span class="ion-android-clipboard"></span>&nbsp; Detail Ticket
-			</div>
-			<div class="panel-body">
-				<div class="detail">
-					<div class="col-1">
-						<div class="col">
-							<span class="ion-clock"></span> 08.00 - 16.000
-						</div>
-						<div class="col">
-							<span class="ion-person-stalker"></span> Min 1 | Max 15 Pax
-						</div>
-						<div class="col">
-							<span class="ion-model-s"></span> Transport
-						</div>
-						<div class="col">
-							<span class="ion-pizza"></span> Breakfast
-						</div>
-					</div>
-					<!-- <div class="col-2">
-						<b>Star From</b>
-						<h2><b style="color: #f25601">Rp. 120.000 </b><small>/ Pax</small></h2> <br>
-						<a href="" data-slide="slides" data-slide-target="#find" class="btn-ticket btn-orange">Find Ticket</a>
-					</div> -->
-				</div>
-			</div>
-		</div>
-		<!-- <div class="panel">
-			<div class="panel-header">
-				<span class="ion-ios-bookmarks"></span>&nbsp; Description
-			</div>
-			<div class="panel-body">
-				<p>    Visit to Elephant Safari Park, to learn about the diversity and ancestry of the elephants
-    Museum and Elephant Discovery Information Centre, to see over 1000 fossils such as skulls, horns, and tusks
-    Feed the adult and baby elephants </p>
-    <p> A chance to watch the animal show, which features stunts, sports, and audience interaction
-    Admission fee, insurance, and transfer service included
-    Buffet lunch at Taro Restaurant included Your Sri Lanka getaway is about to become much more thrilling thanks to this world-renowned spot. Depart from the bustling areas for a while and have an adventure in Elephant Safari Park.</p>
-			</div>
-		</div> -->
-		<div class="panel">
-			<div class="panel-header">
-				<span class="ion-ios-bookmarks"></span>&nbsp; Day 1: Airport- Dambulla
-			</div>
-			<div class="panel-body">
-				<ul>
-				    <p>Upon arrival at the Colombo Bandaranaike International Airport, you will be received warmly by our
-						representative. You will then be escorted to your vehicle to begin your holiday in Sri Lanka.</p>
-				    <p>Your first visit will be to Dambulla.</p><br>
-				<h2>Dambulla</h2>
-				<p>Dambulla is one of the ancient cities of Sri Lanka. The city also boasts to have the largest rose quartz
-					mountain range in South Asia, and the Iron wood forest. Ibbankatuwa prehistoric burial site near
-					Dambulla cave temple complexes is the latest archaeological site found in Dambulla. Dambulla along
-					with nearby Sigiriya and Habarana form a cluster of tourist area within it.</p>
-					<h3>city tour:</h3>
-					<p>Your city tour will commence with the visit to one of the wonders of the ancient world -the
-						Sigiriya Rock Fortress. It is also a UNESCO world Heritage site. Sigiriya Rock was once an ancient Castle
-						used both as a palace and a fortress and was created by the great King Kasyapa. The magnificent rock
-						fortress of Sigiriya is visible for miles from all directions and dominates the surrounding plain. The
-						Sigiriya Complex consists of the central rock, which arises abruptly 200 meters above the surrounding
-						plain with the two rectangular precincts on the east and the west. The rock is surrounded by two wide
-						moats, where crocodiles were introduced in ancient times and three ramparts. The moats and walls that
-						surround the lower palace are still exquisitely beautiful. Your next destination will be the Dambulla Cave
-						Temples. It is the largest and best-preserved cave temple compound in Sri Lanka. There are above 80
-						chronicle caves around this location. The most prominent allures are advanced over 5 caves, which
-						contain statues and paintings. These paintings and statues are depicted to Lord Buddha and his life.
-						There are a total of 153 Buddha statues, 3 statues of Sri Lankan kings and 4 statues of gods andgoddesses. (Entrance fees to sites not included). Additional tours wildlife tours can be added to the tour.
-						Costs will be extra.</p>
-						<p>Overnight stay at your hotel in Dambulla.</p>
-				    
-				</ul>
-			</div>
-		</div>
+        <div class="panel">
+          <div class="panel-header">
+            <span class="ion-ios-bookmarks"></span>&nbsp; Day 2: Dambulla –
+            Kandy
+          </div>
+          <div class="panel-body">
+            <ul>
+              <p>
+                Enjoy a delicious breakfast at your hotel. Today you will visit
+                Kandy, Morning safari in Minneriya.
+              </p>
+              <br />
+              <h2>Minneriya National Park</h2>
+              <p>
+                Minneriya National Park is a national park in North Central
+                Province of Sri Lanka. The area was designated as a national
+                park on 12 August 1997, having been originally declared as a
+                wildlife sanctuary in 1938. The reason for declaring the area as
+                protected is to protect the catchment of Minneriya tank and the
+                wildlife of the surrounding area. The tank is of historical
+                importance, having been built by King Mahasen in third century
+                AD. The park is a dry season feeding ground for the elephant
+                population dwelling in forests of Matale, Polonnaruwa, and
+                Trincomalee districts. The park earned revenue of Rs. 10.7
+                millions in the six months ending in August 2009. Along with
+                Kaudulla and Girithale, Minneriya forms one of the 70 Important
+                Bird Areas (IBAs) of Sri Lanka. The park is situated 182
+                kilometres (113 mi) from Colombo.
+              </p>
+              <h2>Kandy</h2>
+              <p>
+                Lying amidst the hills, Kandy is the last capital of the ancient
+                kings of Sri Lanka. While being the second largest city in Sri
+                Lanka it is also famous for its immense beauty and is named as
+                one of the seven UNESCO declared World Heritage sites in the
+                country. With its luxuriant prairie, picturesque lake, longest
+                river of the country and misty mountains, Kandy successfully
+                mesmerizes every visitor unsurprisingly.
+              </p>
+              <p>Overnight stay at your hotel in Kandy.</p>
+            </ul>
+          </div>
+        </div>
 
-		<div class="panel">
-			<div class="panel-header">
-				<span class="ion-ios-bookmarks"></span>&nbsp; Day 2: Dambulla – Kandy
-			</div>
-			<div class="panel-body">
-				<ul>
-				    <p>Enjoy a delicious breakfast at your hotel. Today you will visit Kandy, Morning safari in Minneriya.</p><br>
-				<h2>Minneriya National Park</h2>
-				<p>Minneriya National Park is a national park in North Central Province of Sri Lanka. The area was
-					designated as a national park on 12 August 1997, having been originally declared as a wildlife sanctuary
-					in 1938. The reason for declaring the area as protected is to protect the catchment of Minneriya tank
-					and the wildlife of the surrounding area. The tank is of historical importance, having been built by King
-					Mahasen in third century AD. The park is a dry season feeding ground for the elephant population
-					dwelling in forests of Matale, Polonnaruwa, and Trincomalee districts. The park earned revenue of Rs.
-					10.7 millions in the six months ending in August 2009. Along with Kaudulla and Girithale, Minneriya
-					forms one of the 70 Important Bird Areas (IBAs) of Sri Lanka. The park is situated 182 kilometres (113
-					mi) from Colombo.</p>
-					<h2>Kandy</h2>
-					<p>Lying amidst the hills, Kandy is the last capital of the ancient kings of Sri Lanka. While being the second
-						largest city in Sri Lanka it is also famous for its immense beauty and is named as one of the seven
-						UNESCO declared World Heritage sites in the country. With its luxuriant prairie, picturesque lake,
-						longest river of the country and misty mountains, Kandy successfully mesmerizes every visitor
-						unsurprisingly.</p>
-						<p>Overnight stay at your hotel in Kandy.</p>
-				    
-				</ul>
-			</div>
-		</div>
+        <!-- Day 3 -->
+        <div class="panel">
+          <div class="panel-header">
+            <span class="ion-ios-bookmarks"></span>&nbsp;Day 3: Kandy
+          </div>
+          <div class="panel-body">
+            <ul>
+              <p>
+                Enjoy a delicious breakfast at your hotel. Today you will visit
+                Kandy
+              </p>
+              <h3>city tour:</h3>
+              <p>
+                While on your city tour you will visit one of the world
+                heritages as well as a sacred place for the Buddhists all over
+                the world; namely the Temple of tooth Relic known to the Sri
+                Lankans as Dalada Maligawa. Your next visit will be to the
+                Peradeniya Botanical Gardens which is a paradise for nature
+                lovers. This beautiful flower Eden is restored with over 300
+                different varieties of orchids, other spices, medicinal plants
+                and Palm trees. Every year more than 1.2 million people are
+                enchanted by the beauty of these 147 acre flower gardens. The
+                real evidence of the richness will be affirmed by your visit to
+                the Gem Museum. Sri Lanka produces the finest quality of gems in
+                the world. Semi-precious gems, the sapphires of Sri Lanka, which
+                are very exclusive and comes in shades of blue, red, green,
+                white etc. In the evening you will witness a traditional
+                cultural dance show. (Entrance fees to sites not included)
+              </p>
+              <p>Overnight stay at your hotel in Kandy.</p>
+            </ul>
+          </div>
+        </div>
 
-		<!-- Day 3 -->
-		<div class="panel">
-			<div class="panel-header">
-				<span class="ion-ios-bookmarks"></span>&nbsp;Day 3: Kandy
-			</div>
-			<div class="panel-body">
-				<ul>
-				    <p>Enjoy a delicious breakfast at your hotel. Today you will visit Kandy</p>
-					<h3>City Tour:</h3>
-					<p>While on your city tour you will visit one of the world heritages as well as a sacred place for
-						the Buddhists all over the world; namely the Temple of tooth Relic known to the Sri Lankans as Dalada
-						Maligawa. Your next visit will be to the Peradeniya Botanical Gardens which is a paradise for nature
-						lovers. This beautiful flower Eden is restored with over 300 different varieties of orchids, other spices,
-						medicinal plants and Palm trees. Every year more than 1.2 million people are enchanted by the beauty
-						of these 147 acre flower gardens. The real evidence of the richness will be affirmed by your visit to the
-						Gem Museum. Sri Lanka produces the finest quality of gems in the world. Semi-precious gems, the
-						sapphires of Sri Lanka, which are very exclusive and comes in shades of blue, red, green, white etc. In
-						the evening you will witness a traditional cultural dance show. (Entrance fees to sites not included)</p>
-				<p>Overnight stay at your hotel in Kandy.</p>
-				
-				    
-				</ul>
-			</div>
-		</div>
+        <!-- ----	Day 4	 ---- -->
 
-	<!-- ----	Day 4	 ---- -->
+        <div class="panel">
+          <div class="panel-header">
+            <span class="ion-ios-bookmarks"></span>&nbsp;Day 4:– Kandy - Galle
+          </div>
+          <div class="panel-body">
+            <ul>
+              <p>
+                Enjoy a delicious breakfast at your hotel. Today you will visit
+                Galle.
+              </p>
+              <h2>Galle</h2>
+              <p>
+                Galle is a beautiful city to witness the sun and sand. Galle
+                Harbor was frequented by Chinese and Arabians sailors before the
+                Portuguese occupied Galle in the 16th century. The Dutch
+                captured Galle in 1640 and handed it over to the British in
+                1796. History reveals that the Chinese Admiral Zheng He, who
+                commanded seven great voyages through the South China Seas and
+                the Indian Ocean between 1405 and 1433, erected a tablet in 1409
+                in Galle in commemoration of his second visit to Sri Lanka. The
+                trilingual tablet discovered in 1911 has inscriptions in
+                Chinese, Tamil and Arabic languages, suggesting that the Chinese
+                were dealing with a cosmopolitan trading community at that time.
+              </p>
+              <p>Overnight stay at your hotel in Galle.</p>
+            </ul>
+          </div>
+        </div>
 
-	<div class="panel">
-		<div class="panel-header">
-			<span class="ion-ios-bookmarks"></span>&nbsp;Day 4:– Kandy - Galle
-		</div>
-		<div class="panel-body">
-			<ul>
-				<p>Enjoy a delicious breakfast at your hotel. Today you will visit Galle.</p>
-				<h2>Galle</h2>
-				<p>Galle is a beautiful city to witness the sun and sand. Galle Harbor was frequented by Chinese and
-					Arabians sailors before the Portuguese occupied Galle in the 16th century. The Dutch captured Galle in
-					1640 and handed it over to the British in 1796. History reveals that the Chinese Admiral Zheng He, who
-					commanded seven great voyages through the South China Seas and the Indian Ocean between 1405 and
-					1433, erected a tablet in 1409 in Galle in commemoration of his second visit to Sri Lanka. The trilingual
-					tablet discovered in 1911 has inscriptions in Chinese, Tamil and Arabic languages, suggesting that the
-					Chinese were dealing with a cosmopolitan trading community at that time.</p>
-			<p>Overnight stay at your hotel in Galle.</p>
-			
-				
-			</ul>
-		</div>
-	</div>
+        <!-- --- Day 5 --- -->
 
-	<!-- --- Day 5 --- -->
+        <div class="panel">
+          <div class="panel-header">
+            <span class="ion-ios-bookmarks"></span>&nbsp;Day 5:–Galle
+          </div>
+          <div class="panel-body">
+            <ul>
+              <p>
+                Enjoy a delicious breakfast at your hotel. Today you will visit
+                Galle.
+              </p>
+              <h3>city tour:</h3>
+              <p>
+                During your city tour you will visit the Galle Dutch Fort which
+                is among the most popular sites in Galle where it attracts those
+                who value archaeological reserves and heritage. It is known as
+                the oldest fort in Asia, named as a world heritage by UNESCO.
+                Inside the fort, travelers can find other attractions such as
+                the Dutch Museum, which contains paintings, pictures and
+                furniture of the Dutch Reformed Church. The fort is built on
+                small peninsula that can be easily accessed from the Galle town.
+                It is the best place to visit during an evening as the
+                picturesque scenery of the sunset can be witnessed at its best.
+                The trilingual inscription is in the National Museum in Colombo
+                and a copy can be found in the Maritime Museum in Galle.
+              </p>
+              <p>Overnight stay at your hotel in Galle.</p>
+            </ul>
+          </div>
+        </div>
+        <!-- -- Day 6 -- -->
+        <div class="panel">
+          <div class="panel-header">
+            <span class="ion-ios-bookmarks"></span>&nbsp;Day 6: Galle – Mirissa
+          </div>
+          <div class="panel-body">
+            <ul>
+              <p>
+                Enjoy a delicious breakfast at your hotel. Today you will
+                proceed to Mirissa
+              </p>
+              <p>Leisurely stay</p>
+              <p>Overnight stay at your hotel in Mirissa</p>
+            </ul>
+          </div>
+        </div>
 
-	<div class="panel">
-		<div class="panel-header">
-			<span class="ion-ios-bookmarks"></span>&nbsp;Day 5:–Galle
-		</div>
-		<div class="panel-body">
-			<ul>
-				<p>Enjoy a delicious breakfast at your hotel. Today you will visit Galle.</p>
-				<h3>city tour:</h3>
-				<p>GDuring your city tour you will visit the Galle Dutch Fort which is among the most popular
-					sites in Galle where it attracts those who value archaeological reserves and heritage. It is known as the
-					oldest fort in Asia, named as a world heritage by UNESCO. Inside the fort, travelers can find other
-					attractions such as the Dutch Museum, which contains paintings, pictures and furniture of the Dutch
-					Reformed Church. The fort is built on small peninsula that can be easily accessed from the Galle town. It
-					is the best place to visit during an evening as the picturesque scenery of the sunset can be witnessed at
-					its best. The trilingual inscription is in the National Museum in Colombo and a copy can be found in the
-					Maritime Museum in Galle.</p>
-			<p>Overnight stay at your hotel in Galle.</p>
-			
-				
-			</ul>
-		</div>
-	</div>
-<!-- -- Day 6 -- -->
-	<div class="panel">
-		<div class="panel-header">
-			<span class="ion-ios-bookmarks"></span>&nbsp;Day 6: Galle – Mirissa
-		</div>
-		<div class="panel-body">
-			<ul>
-				<p>Enjoy a delicious breakfast at your hotel. Today you will proceed to Mirissa</p>
-				<p>Leisurely stay</p>
-			<p>Overnight stay at your hotel in Mirissa</p>
-			
-				
-			</ul>
-		</div>
-	</div>
+        <!-- -- Day 7 --  -->
 
-	<!-- -- Day 7 --  -->
+        <div class="panel">
+          <div class="panel-header">
+            <span class="ion-ios-bookmarks"></span>&nbsp;Day 7: Mirissa
+          </div>
+          <div class="panel-body">
+            <ul>
+              <p>
+                Enjoy a delicious breakfast at your hotel. Today you will
+                proceed to Mirissa.
+              </p>
+              <h3>Whale & Dolphin Watching Boat Tour</h3>
+              <ul>
+                <li>Departure 7.00 a.m. from Mirissa Harbour</li>
+                <li>Tour May last 3-5 Hours</li>
+                <li>Breakfast and mineral water provided on board</li>
+                <li>
+                  Qualified skipper and crew will assist you while in tour
+                </li>
+                <li>Our Boat is Licensed for passenger Travelling</li>
+                <li>All Passengers are fully insured.</li>
+                <li>
+                  Boat Equipped with GPS Navigation, Communication Equipment,
+                  Life jackets
+                </li>
+              </ul>
+            </ul>
+          </div>
+          <section class="destination-images">
+            <!-- <div></div> -->
+            <div class="destination-images-flexinner">
+              <img src="img/ceylone/destinations/image.3RV5Z1.png" alt="img" />
+            </div>
+            <!-- <div><img src="img/ceylone/destinations/image.3RV5Z1.png" alt="img"></div> -->
 
+            <div class="destination-images-flexinner">
+              <img src="img/ceylone/destinations/image.AMY2Z1.png" alt="img" />
+            </div>
+          </section>
+        </div>
 
-	<div class="panel">
-		<div class="panel-header">
-			<span class="ion-ios-bookmarks"></span>&nbsp;Day 7: Mirissa
-		</div>
-		<div class="panel-body">
-			<ul>
-				<p>Enjoy a delicious breakfast at your hotel. Today you will proceed to Mirissa.</p>
-				<h3>Whale & Dolphin Watching Boat Tour</h3>
-			<ul>
-				<li>Departure 7.00 a.m. from Mirissa Harbour</li>
-				<li>Tour May last 3-5 Hours</li>
-				<li>Breakfast and mineral water provided on board</li>
-				<li>Qualified skipper and crew will assist you while in tour</li>
-				<li>Our Boat is Licensed for passenger Travelling</li>
-				<li>All Passengers are fully insured.</li>
-				<li>Boat Equipped with GPS Navigation, Communication Equipment, Life jackets</li>
-			</ul>
-			<div class="destination-images">
-				<img src="img/ceylone/destinations/image.3RV5Z1.png" alt="img">
-				<img src="img/ceylone/destinations/image.AMY2Z1.png" alt="img">
+        <!-- day 8----  -->
+        <div class="panel">
+          <div class="panel-header">
+            <span class="ion-ios-bookmarks"></span>&nbsp;Day 8: Mirissa -
+            Bentota
+          </div>
+          <div class="panel-body">
+            <ul>
+              <p>
+                Enjoy a delicious breakfast at your hotel. Today you will
+                proceed to Bentota.
+              </p>
+              <p>
+                Bentota is the city of the Golden Beaches. You will be able to
+                relax and feel the spirit of the sea and the warmth of the soft
+                sand. The day is divided in between swimming in the water and
+                bathing in the sun. Bentota provides the perfect turf for
+                unfurled vacation at the beach. While enjoying the sun, sea and
+                sand the water sports lovers can enroll themselves in various
+                water sports bringing in the unique pleasure of this locale.
+              </p>
+              <h3>city tour:</h3>
+              <p>
+                On your city tour you will enjoy a boat ride along the Madhu
+                River. It is a scenic tour relaxing and interesting while
+                passing many islets forested with mangroves and experience the
+                natural rhythms as well. If you are looking for more exclusive
+                experience visit the turtle hatchery too. The Turtle Hatchery is
+                the prime turtle nesting site which was open by the Wild life
+                Protection Society in 1981.Visitors can see huge tanks filled
+                with new born turtle hatchlings. After being fed, the baby
+                turtles are taken to the sea and released when they are 2-4 days
+                old, usually during the safer hours of darkness. (Entrance fees
+                to sites not included)
+              </p>
+              <p>Overnight stay at your hotel in Bentota…………..</p>
 
-			</div>
-			
-				
-			</ul>
-		</div>
-	</div>
-
-	<!-- day 8----  -->
-	<div class="panel">
-		<div class="panel-header">
-			<span class="ion-ios-bookmarks"></span>&nbsp;Day 8: Mirissa - Bentota
-		</div>
-		<div class="panel-body">
-			<ul>
-				<p>Enjoy a delicious breakfast at your hotel. Today you will proceed to Bentota.</p>
-				<p>Bentota is the city of the Golden Beaches. You will be able to relax and feel the spirit of the sea and the
-					warmth of the soft sand. The day is divided in between swimming in the water and bathing in the sun.
-					Bentota provides the perfect turf for unfurled vacation at the beach. While enjoying the sun, sea and
-					sand the water sports lovers can enroll themselves in various water sports bringing in the unique
-					pleasure of this locale.</p>
-				<h3>city tour</h3>
-				<p>On your city tour you will enjoy a boat ride along the Madhu River. It is a scenic tour relaxing
-					and interesting while passing many islets forested with mangroves and experience the natural rhythms
-					as well. If you are looking for more exclusive experience visit the turtle hatchery too. The Turtle
-					Hatchery is the prime turtle nesting site which was open by the Wild life Protection Society in
-					1981.Visitors can see huge tanks filled with new born turtle hatchlings. After being fed, the baby turtles
-					are taken to the sea and released when they are 2-4 days old, usually during the safer hours of darkness.
-					(Entrance fees to sites not included)</p>
-					<p>Overnight stay at your hotel in Bentota…………..</p>
-			
-			<div class="destination-images">
-				<!-- <img src="img/ceylone/destinations/image.3RV5Z1.png" alt="img">
+              <div class="destination-images">
+                <!-- <img src="img/ceylone/destinations/image.3RV5Z1.png" alt="img">
 				<img src="img/ceylone/destinations/image.AMY2Z1.png" alt="img"> -->
+              </div>
+            </ul>
+          </div>
+        </div>
+        <div class="panel">
+          <div class="panel-header">
+            <span class="ion-ios-bookmarks"></span>&nbsp;Day 9: Bentota –
+            Colombo
+          </div>
+          <div class="panel-body">
+            <ul>
+              <p>
+                Enjoy a delicious breakfast at your hotel. Travel to Colombo
+              </p>
+              <p>Leisurely stay at hotel</p>
 
-			</div>
-			
-				
-			</ul>
-		</div>
-	</div>
-	<div class="panel">
-		<div class="panel-header">
-			<span class="ion-ios-bookmarks"></span>&nbsp;Day 9: Bentota – Colombo
-		</div>
-		<div class="panel-body">
-			<ul>
-				<p>Enjoy a delicious breakfast at your hotel. Travel to Colombo</p>
-				<p>Leisurely stay at hotel</p>
+              <h2>Colombo</h2>
+              <p>
+                Colombo is the largest city and commercial capital of Sri Lanka.
+                Located on the west coast, it is a busy and vibrant city with a
+                mixture of modern and colonial impressions. Colombo has wildly
+                varying architecture that span centuries and depict various
+                styles. Many colonial buildings influenced by the Portuguese,
+                Dutch and British exist alongside structures built in Buddhist,
+                Hindu, Islamic, Indian and Contemporary architectural styles. No
+                other place is this more evident in the heart of the city the
+                Fort area. Colombo also boasts many shopping malls and
+                department stores that offer brand name clothing at highly
+                discounted prices. Therefore, it has become an important
+                shopping destination among tourists.
+              </p>
+              <p>Overnight stay at your hotel in Colombo…………..</p>
 
-				<h2>Colombo</h2>
-				<p>Colombo is the largest city and commercial capital of Sri Lanka. Located on the west coast, it is a busy
-					and vibrant city with a mixture of modern and colonial impressions. Colombo has wildly varying
-					architecture that span centuries and depict various styles. Many colonial buildings influenced by the
-					Portuguese, Dutch and British exist alongside structures built in Buddhist, Hindu, Islamic, Indian and
-					Contemporary architectural styles. No other place is this more evident in the heart of the city the Fort
-					area. Colombo also boasts many shopping malls and department stores that offer brand name clothing
-					at highly discounted prices. Therefore, it has become an important shopping destination among tourists.</p>
-					<p>Overnight stay at your hotel in Colombo…………..</p>
-
-			<div class="destination-images">
-				<!-- <img src="img/ceylone/destinations/image.3RV5Z1.png" alt="img">
+              <div class="destination-images">
+                <!-- <img src="img/ceylone/destinations/image.3RV5Z1.png" alt="img">
 				<img src="img/ceylone/destinations/image.AMY2Z1.png" alt="img"> -->
+              </div>
+            </ul>
+          </div>
+        </div>
+        <div class="panel">
+          <div class="panel-header">
+            <span class="ion-ios-bookmarks"></span>&nbsp;Day 10: Bentota –
+            Colombo
+          </div>
+          <div class="panel-body">
+            <ul>
+              <p>
+                Enjoy a delicious breakfast at your hotel. Today leisurely stay
+                at hotel
+              </p>
+            </ul>
+          </div>
+        </div>
+        <div class="panel">
+          <div class="panel-header">
+            <span class="ion-ios-bookmarks"></span>&nbsp;Day 11: Colombo -
+            Airport
+          </div>
+          <div class="panel-body">
+            <ul>
+              <p>Transfer to airport, end of tour.</p>
+            </ul>
+          </div>
+        </div>
 
-			</div>
-			
-				
-			</ul>
-		</div>
-	</div>
-	<div class="panel">
-		<div class="panel-header">
-			<span class="ion-ios-bookmarks"></span>&nbsp;Day 10: Bentota – Colombo
-		</div>
-		<div class="panel-body">
-			<ul>
-				<p>Enjoy a delicious breakfast at your hotel. Today leisurely stay at hotel</p>
-				
+        <div class="panel">
+          <div class="panel-header">
+            <span class="ion-ios-bookmarks"></span>&nbsp; Higlight
+          </div>
+          <div class="panel-body">
+            <ul>
+              <li>
+                Visit to Elephant Safari Park, to learn about the diversity and
+                ancestry of the elephants
+              </li>
+              <li>
+                Museum and Elephant Discovery Information Centre, to see over
+                1000 fossils such as skulls, horns, and tusks
+              </li>
+              <li>Feed the adult and baby elephants</li>
+              <li>
+                A chance to watch the animal show, which features stunts,
+                sports, and audience interaction
+              </li>
+              <li>Admission fee, insurance, and transfer service included</li>
+              <li>Buffet lunch at Taro Restaurant included</li>
+            </ul>
+          </div>
+        </div>
+        <div class="panel">
+          <div class="panel-header">
+            <span class="ion-map"></span>&nbsp; Location
+          </div>
+          <div class="panel-body">
+            <div class="col-1">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m70!1m12!1m3!1d1013793.5374790289!2d79.78209769404593!3d6.993847941958118!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m55!3e0!4m5!1s0x3ae2efb735f22d5d%3A0x6ebd702103828b37!2sBandaranaike%20International%20Airport%20(CMB)%2C%20Katunayake!3m2!1d7.1801552!2d79.8842521!4m5!1s0x3afcaff4c8adcc4f%3A0x67ae3cc5b1536914!2sDambulla!3m2!1d7.874217!2d80.6511287!4m5!1s0x3afb6009a20be05d%3A0xa4d046f2f06b05f5!2sMinneriya%20National%20Park%2C%20A11%2C%20Rambawilla!3m2!1d8.0328123!2d80.8244141!4m5!1s0x3ae366266498acd3%3A0x411a3818a1e03c35!2sKandy!3m2!1d7.2905714999999995!2d80.6337262!4m5!1s0x3ae173bb6932fce3%3A0x4a35b903f9c64c03!2sGalle!3m2!1d6.032894799999999!2d80.2167912!4m5!1s0x3ae13fce3177dc59%3A0xa2d8a78b36dc9c90!2sMirissa!3m2!1d5.948262!2d80.4715866!4m5!1s0x3ae22e900168ca21%3A0x96c438f00a68c060!2sBentota!3m2!1d6.4189175!2d80.005979!4m5!1s0x3ae253d10f7a7003%3A0x320b2e4d32d3838d!2sColombo!3m2!1d6.9270786!2d79.861243!4m5!1s0x3ae2efb735f22d5d%3A0x6ebd702103828b37!2sBandaranaike%20International%20Airport%2C%20Katunayake!3m2!1d7.1801552!2d79.8842521!5e0!3m2!1sen!2slk!4v1676352295243!5m2!1sen!2slk"
+                width="600"
+                height="450"
+                style="border: 0"
+                allowfullscreen=""
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+              ></iframe>
+            </div>
+            <div class="col-2">
+              <h3>Transportation & Venue Info</h3>
+              <p>Hotel pickup</p>
+              <p>
+                Pickup and drop-off are available within Nusa Dua, Kuta,
+                Seminyak, Sanur and Ubud areas only.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="panel">
+          <div class="panel-body">
+            <form class="form-horizontal">
+              <div class="input-form">
+                <label>Select Date</label>
+                <input type="date" name="" class="form-control" />
+              </div>
+              <div class="input-form">
+                <label>Number of Pax</label>
+                <select class="form-control">
+                  <option value="1">1</option>
+                  <option value="2">2</option>
+                  <option value="3">3</option>
+                  <option value="4">4</option>
+                </select>
+              </div>
+              <div class="input-form" id="find">
+                <label></label>
+                <button
+                  class="btn btn-ticket btn-orange"
+                  style="margin-top: 37px; text-align: right"
+                >
+                  Purchase
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
 
-			<!-- <div class="destination-images"> -->
-				<!-- <img src="img/ceylone/destinations/image.3RV5Z1.png" alt="img">
-				<img src="img/ceylone/destinations/image.AMY2Z1.png" alt="img"> -->
+    <div class="icons">
+      <a href="https://wa.me/+94114666444">
+        <ul>
+          <li>
+            <i class="fa fa-whatsapp"></i><span href="WhatsApp">WhatsApp</span>
+          </li>
+        </ul>
+      </a>
+    </div>
 
-			<!-- </div> -->
-			
-				
-			</ul>
-		</div>
-	</div>
-	<div class="panel">
-		<div class="panel-header">
-			<span class="ion-ios-bookmarks"></span>&nbsp;Day 11: Colombo - Airport
-		</div>
-		<div class="panel-body">
-			<ul>
-				<p>Transfer to airport, end of tour.</p>
-				
+    <section class="section-footer">
+      <div class="row">
+        <div class="col-left">
+          <p>Copyright &copy; 2017</p>
+          <p>
+            Jl. Panglima Sudirman, Caruban Madiun <br />
+            Phone : +62 851 2343 9090 <br />
+            Email : contact@bavel.com
+          </p>
+          <a href="https://www.facebook.com/bestbali/" target="_blank"
+            ><span class="ion-social-facebook icon-social"></span
+          ></a>
+          <a href="https://www.instagram.com/explorebali/" target="_blank"
+            ><span class="ion-social-instagram icon-social"></span
+          ></a>
+          <a
+            href="https://twitter.com/hashtag/explorebali?lang=en"
+            target="_blank"
+            ><span class="ion-social-twitter icon-social"></span
+          ></a>
+        </div>
+        <div class="col-right">
+          <b>EXPERIENCE</b>
+          <ul>
+            <li><a href="#">Natural</a></li>
+            <li><a href="#">Culture</a></li>
+            <li><a href="#">Religi</a></li>
+            <li><a href="#">Culnary</a></li>
+            <li><a href="#">Adventure</a></li>
+          </ul>
+        </div>
+        <div class="col-right">
+          <b>TRAVEL GUIDE</b>
+          <ul>
+            <li><a href="#">Tourism Guide</a></li>
+            <li><a href="#">Travel Agent</a></li>
+            <li><a href="#">Accomodations</a></li>
+            <li><a href="#">On Budget</a></li>
+          </ul>
+        </div>
+        <div class="col-right">
+          <b>WHAT'S HAPPEN</b>
+          <ul>
+            <li><a href="#">News</a></li>
+            <li><a href="#">Event</a></li>
+            <li><a href="#">Tips & Info</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>Copyright © 2023</p>
+      </div>
+    </section>
 
-			<!-- <div class="destination-images"> -->
-				<!-- <img src="img/ceylone/destinations/image.3RV5Z1.png" alt="img">
-				<img src="img/ceylone/destinations/image.AMY2Z1.png" alt="img"> -->
+    <script type="text/javascript" src="js/jquery.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
+    <script type="text/javascript" src="js/swipe.js"></script>
 
-			<!-- </div> -->
-			
-				
-			</ul>
-		</div>
-	</div>
+    <!-- ---scripts---  -->
 
-
-		<div class="panel">
-			<div class="panel-header">
-				<span class="ion-ios-bookmarks"></span>&nbsp; Higlight
-			</div>
-			<div class="panel-body">
-				<ul>
-				    <li>Visit to Elephant Safari Park, to learn about the diversity and ancestry of the elephants</li>
-				    <li>Museum and Elephant Discovery Information Centre, to see over 1000 fossils such as skulls, horns, and tusks</li>
-				    <li>Feed the adult and baby elephants</li>
-				    <li>A chance to watch the animal show, which features stunts, sports, and audience interaction</li>
-				    <li>Admission fee, insurance, and transfer service included</li>
-				    <li>Buffet lunch at Taro Restaurant included</li>
-				</ul>
-			</div>
-		</div>
-		<div class="panel">
-			<div class="panel-header">
-				<span class="ion-map"></span>&nbsp; Location
-			</div>
-			<div class="panel-body">
-				<div class="col-1">
-					<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15788.424139256455!2d115.283967!3d-8.391231!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x165ad32430c70f14!2sElephant+Safari+Park+Lodge+Sri Lanka!5e0!3m2!1sen!2sid!4v1524497165802" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
-				</div>
-				<div class="col-2">
-					<h3>Transportation & Venue Info</h3>
-					<p>Hotel pickup</p>
-					<p>Pickup and drop-off are available within Nusa Dua, Kuta, Seminyak, Sanur and Ubud areas only.</p>
-				</div>
-			</div>
-		</div>
-		<div class="panel">
-			<div class="panel-body">
-				<form class="form-horizontal">
-					<div class="input-form">
-						<label>Select Date</label>
-						<input type="date" name="" class="form-control">
-					</div>
-					<div class="input-form">
-						<label>Number of Pax</label>
-						<select class="form-control">
-							<option value="1">1</option>
-							<option value="2">2</option>
-							<option value="3">3</option>
-							<option value="4">4</option>
-						</select>
-					</div>
-					<div class="input-form" id="find">
-						<label></label>
-						<button class="btn btn-ticket btn-orange" style="margin-top: 37px;text-align: right;">Purchase</button>
-					</div>
-				</form>
-			</div>
-		</div>
-	</div>
-</section>
-
-<section class="section-footer">
-	<div class="row">
-		<div class="col-left">
-			<p>Copyright &copy; 2017</p>
-			<p>Jl. Panglima Sudirman, Caruban Madiun <br>
-			Phone : +62 851 2343 9090 <br>
-			Email : contact@bavel.com </p>
-			<a href="https://www.facebook.com/bestbali/" target="_blank"><span class="ion-social-facebook icon-social"></span></a>
-			<a href="https://www.instagram.com/explorebali/" target="_blank"><span class="ion-social-instagram icon-social"></span></a>
-			<a href="https://twitter.com/hashtag/explorebali?lang=en" target="_blank"><span class="ion-social-twitter icon-social"></span></a>
-		</div>
-		<div class="col-right">
-			<b>EXPERIENCE</b>
-			<ul>
-				<li><a href="#">Natural</a></li>
-				<li><a href="#">Culture</a></li>
-				<li><a href="#">Religi</a></li>
-				<li><a href="#">Culnary</a></li>
-				<li><a href="#">Adventure</a></li>
-			</ul>
-		</div>
-		<div class="col-right">
-			<b>TRAVEL GUIDE</b>
-			<ul>
-				<li><a href="#">Tourism Guide</a></li>
-				<li><a href="#">Travel Agent</a></li>
-				<li><a href="#">Accomodations</a></li>
-				<li><a href="#">On Budget</a></li>
-			</ul>
-		</div>
-		<div class="col-right">
-			<b>WHAT'S HAPPEN</b>
-			<ul>
-				<li><a href="#">News</a></li>
-				<li><a href="#">Event</a></li>
-				<li><a href="#">Tips & Info</a></li>
-			</ul>
-		</div>
-	</div>
-	<div class="footer-bottom">
-		<p>Copyright © 2023</p>
-	</div>
-</section>
-
-<script type="text/javascript" src="js/jquery.js"></script>
-<script type="text/javascript" src="js/main.js"></script>
-<script type="text/javascript" src="js/swipe.js"></script>
-</body>
+    <script
+      src="https://kit.fontawesome.com/5a1fbe1d7c.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>
