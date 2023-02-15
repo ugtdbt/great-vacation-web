@@ -403,14 +403,14 @@ hr {
 }
 
 
-@media (max-width: 480px) {
+@media (max-width: 773px) {
   .navbar .navbar-bars {
     display: block;
 
   }
 }
 
-@media (max-width: 480px) {
+@media (max-width: 773px) {
   .navbar .navbar-item {
     display: none;
 
