@@ -2184,24 +2184,32 @@ ul.breadcrumb li a:hover {
   justify-content: center;
   flex-wrap: wrap;
   align-items: center;
+  width: 100%;
 }
 
 .section-ticket .body .panel .panel-body .detail .col-1 {
-  width: 60%;
+  width: 100%;
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
+
 }
 
 @media (max-width: 420px) {
   .section-ticket .body .panel .panel-body .detail .col-1 {
     width: 100%;
+    min-width: 162px;
+
   }
 }
 
+
+
 .section-ticket .body .panel .panel-body .detail .col-1 .col {
-  width: calc(100% / 2);
+  min-width: 273px;
   padding-bottom: 20px;
   font-size: 14px;
+  justify-content: center;
 }
 
 .section-ticket .body .panel .panel-body .detail .col span {
@@ -2222,7 +2230,7 @@ ul.breadcrumb li a:hover {
 }
 
 .section-ticket .body .panel .panel-body .col-1 {
-  width: 65%;
+  width: 80%;
   max-height: 100%;
 }
 
@@ -2239,7 +2247,7 @@ ul.breadcrumb li a:hover {
   padding-left: 20px;
 }
 
-.section-ticket .body .panel .panel-body form {
+/* .section-ticket .body .panel .panel-body form {
   display: flex;
   justify-content: center;
   width: 100%;
@@ -2262,7 +2270,33 @@ ul.breadcrumb li a:hover {
 .section-ticket .body .panel .panel-body form .input-form input,
 .section-ticket .body .panel .panel-body form .input-form select {
   margin-top: 15px;
+} */
+
+.panel-body {
+  display: flex;
+  flex-wrap: wrap;
 }
+
+.detail {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.col-1 {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.col {
+  flex: 1;
+  margin: 10px;
+  padding: 10px;
+  min-width: 30%;
+  min-height: 63;
+  flex-grow: 1;
+  /* background-color: #eee; */
+}
+
 
 /* ---Destination images----  */
 .destination-images {
