@@ -259,32 +259,32 @@
           </div>
         </div>
         <div class="panel">
-          <div class="panel-body">
+          <div class="panel-body-ticket">
             <form class="form-horizontal">
               <div class="input-form">
                 <label>Select Date</label>
                 <input type="date" name="" id="dateWhatsapp" class="form-control" />
               </div>
               <div class="input-form">
-                <label>Number of Pax</label>
-                <select class="form-control" id="paxWhatsapp">
-                  <option value="1">1</option>
-                  <option value="2">2</option>
-                  <option value="3">3</option>
-                  <option value="4">4</option>
-                </select>
-              </div>
-              <div class="input-form" id="find">
-                <label></label>
-                <button
-                  onclick="sendWhatsAppMessage()"
-                  class="btn btn-ticket btn-green"
-                  style="background-color: rgb(65, 199, 65); margin-top: 37px; text-align: right"
-                >
-                  Sent to Whatsapp
-                </button>
+                <label>Number of Pax (1 - 100)</label>
+
+                <input
+                  id="paxWhatsapp"
+                  class="form-control"
+                  type="number"
+                  id="quantity"
+                  name="quantity"
+                  min="1"
+                  max="100"
+                  value="1"
+                />
               </div>
             </form>
+            <div class="btn-ticket-outer" id="find">
+              <button onclick="sendWhatsAppMessage()" class="btn btn-ticket btn-green">
+                Sent to Whatsapp
+              </button>
+            </div>
           </div>
         </div>
       </div>
