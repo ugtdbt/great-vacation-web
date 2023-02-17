@@ -221,11 +221,45 @@ hr {
   font-size: 14px;
 }
 
+.panel-body-ticket {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: flex-start;
+  margin-left: 20px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  margin-right: 20px;
+  flex-grow: 1;
+  padding-right: 20%;
+}
+
+
+.panel-body-ticket .form-horizontal .input-form input {
+  min-width: 195px;
+}
+
 .btn-ticket {
   padding: 10px 42px;
-  font-size: 14px;
+  font-size: 18px;
   font-weight: bold;
   border-radius: 8px;
+  color: white;
+
+}
+
+.btn-ticket-outer {
+  padding-bottom: 40px;
+  max-height: 96px;
+}
+
+.btn-ticket-outer button {
+  /* margin-top: 10px; */
+  width: 100%;
+  background-color: rgb(65, 199, 65);
+  margin-top: 24px;
+  margin-left: 15px;
+  text-align: right
 }
 
 .btn:hover {
@@ -982,6 +1016,8 @@ hr {
   padding: 10px 55px;
   display: flex;
   justify-content: center;
+  flex-wrap: wrap;
+  flex-grow: 1;
 }
 
 @media (max-width: 420px) {
@@ -1002,6 +1038,8 @@ hr {
   -moz-transition: .4s ease-in-out;
   -ms-transition: .4s ease-in-out;
   -o-transition: .4s ease-in-out;
+  min-width: 307px;
+  max-width:28% ;
 }
 
 .section-discover-body .col:hover {
@@ -1044,6 +1082,8 @@ hr {
   -moz-transition: 0.5s ease-in-out;
   -ms-transition: 0.5s ease-in-out;
   -o-transition: 0.5s ease-in-out;
+  margin-left: -10px;
+
 }
 
 .section-discover-body .col .caption .line {
@@ -1069,6 +1109,7 @@ hr {
   -moz-transition: 0.5s ease-in-out;
   -ms-transition: 0.5s ease-in-out;
   -o-transition: 0.5s ease-in-out;
+  color: #ffffff00;
 }
 
 .section-discover-body .col:hover .caption {
@@ -1077,6 +1118,8 @@ hr {
 
 .section-discover-body .col:hover .caption-text {
   visibility: visible;
+  color: #ffffff;
+
 }
 
 /* Section Gallery */
@@ -1115,6 +1158,8 @@ hr {
 
 .section-gallery-body .row .col-image {
   width: 35%;
+  flex-grow: 1;
+
   max-height: 100%;
 }
 
@@ -2250,14 +2295,17 @@ ul.breadcrumb li a:hover {
 /* .section-ticket .body .panel .panel-body form {
   display: flex;
   justify-content: center;
-  width: 100%;
+  width: 30%;
+  flex-wrap: wrap;
+  justify-content: flex-start;
 }
 
 .section-ticket .body .panel .panel-body form .input-form {
   padding: 0 20px;
-}
-
-@media (max-width: 420px) {
+  /* min-width: 300px; */
+/* } */
+*/
+/* @media (max-width: 420px) {
   .section-ticket .body .panel .panel-body form {
     flex-wrap: wrap;
   }
