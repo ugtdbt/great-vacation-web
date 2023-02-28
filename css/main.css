@@ -1276,6 +1276,7 @@ hr {
 .section-tour-body .row .col-1,
 .single-body .col {
   width: calc(95% / 2);
+  min-width: 300px;
   margin: 10px;
   padding-bottom: 0;
   max-height: 100%;
@@ -2304,7 +2305,7 @@ ul.breadcrumb li a:hover {
   padding: 0 20px;
   /* min-width: 300px; */
 /* } */
-*/
+/* */ 
 /* @media (max-width: 420px) {
   .section-ticket .body .panel .panel-body form {
     flex-wrap: wrap;
