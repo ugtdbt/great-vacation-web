@@ -2441,3 +2441,18 @@ ul.breadcrumb li a:hover {
   margin-left: 2px;
   margin-right: 15px;
 }
+
+.google-maps {
+  position: relative;
+  padding-bottom: 75%; 
+  height: 0;
+  overflow: hidden;
+  
+}
+.google-maps iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100% !important;
+  height: 100% !important;
+}
