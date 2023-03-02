@@ -240,12 +240,13 @@ hr {
 }
 
 .btn-ticket {
-  padding: 10px 42px;
+  padding: 10px 20px 10px 15px;
   font-size: 18px;
   font-weight: bold;
   border-radius: 8px;
   color: white;
-
+  max-width: 200px;
+margin-left: 20px;
 }
 
 .btn-ticket-outer {
