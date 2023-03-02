@@ -240,12 +240,13 @@ hr {
 }
 
 .btn-ticket {
-  padding: 10px 42px;
+  padding: 10px 20px 10px 15px;
   font-size: 18px;
   font-weight: bold;
   border-radius: 8px;
   color: white;
-
+  max-width: 200px;
+margin-left: 20px;
 }
 
 .btn-ticket-outer {
@@ -2440,4 +2441,19 @@ ul.breadcrumb li a:hover {
   margin-top: 2px;
   margin-left: 2px;
   margin-right: 15px;
+}
+
+.google-maps {
+  position: relative;
+  padding-bottom: 75%; 
+  height: 0;
+  overflow: hidden;
+  
+}
+.google-maps iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100% !important;
+  height: 100% !important;
 }
