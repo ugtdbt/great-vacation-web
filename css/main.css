@@ -2457,3 +2457,9 @@ ul.breadcrumb li a:hover {
   width: 100% !important;
   height: 100% !important;
 }
+.fa-paw{
+  color: rgb(88, 88, 88);
+}
+.fa-paw-heading{
+  color: white;
+}
