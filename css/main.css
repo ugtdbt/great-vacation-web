@@ -2384,7 +2384,7 @@ ul.breadcrumb li a:hover {
   width: 100%;
   min-height: 100%;
   transition: 0.3s;
-  border-radius: 10px;
+  border-radius: 5px;
   box-shadow: 5px 3px 12px 6px #00000024;
 
 }
